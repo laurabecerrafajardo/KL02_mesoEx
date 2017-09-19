@@ -13,7 +13,6 @@
 **         No public methods
 **
 ** ###################################################################*/
-//PRUEBA
 
 
 /* Including needed modules to compile this module/procedure */
