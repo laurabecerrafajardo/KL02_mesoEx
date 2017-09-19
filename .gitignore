@@ -50,3 +50,17 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+#My gitignore lines
+/FLASH
+/MQXLite
+/Project_Settings/Linker_Files
+/*.g_c
+/*.g_x
+/*.cwGeneratedFileSetLog
+/Generated_Code
+/Documentation
+/Static_Code
+/Debug
+/ProjectInfo.xml
+/.metadata
