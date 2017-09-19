@@ -1,6 +1,6 @@
 <Analysispoints>
 	<Name>AnalysispointsManager</Name>
-	<ProjectPath>F:/Dropbox/PostDoc/2. Microcontroller/CodeWarriorPortatil/KL02_mesoEaxon/SaAnalysispointsManager.apconfig</ProjectPath>
+	<ProjectPath>E:/Laura/Dropbox/PostDoc/2. Microcontroller/CodeWarrior/KL02_mesoEaxon/SaAnalysispointsManager.apconfig</ProjectPath>
 	<MaxNumberOfCores>1</MaxNumberOfCores>
 	<Comments>Analysispoints Manager</Comments>
 	<IgnoreAll>false</IgnoreAll>

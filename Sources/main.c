@@ -13,7 +13,7 @@
 **         No public methods
 **
 ** ###################################################################*/
-//prueba desde laptop
+
 
 /* Including needed modules to compile this module/procedure */
 #include "Cpu.h"
@@ -63,7 +63,7 @@ int main(void)
   
   if (!ERROR_global){ //si no hay error global
 	  int a;	  
-	  for( a = 0; a < 20; a = a + 1 ){
+	  for( a = 0; a < 200; a = a + 1 ){
 		  //HACE ADQUISICIÓN 10 VECES
 		  AD_finished = FALSE; // reset flag 
 		  (void)AD1_Measure(FALSE); // AD_finished will be set to TRUE once 
@@ -72,7 +72,8 @@ int main(void)
 		  }
 		  // AD_finished set to TRUE by the interrupt to indicate the result is ready 
 		  (void)AD1_GetValue16(&value); //* get the result into value variable */
-		  voltage = value*3.3/1024; //Voltage = value*3.3/2^10
+		  Isource1_NegVal(); //Para revisar la velocidad de conversión del ADC!
+		  //voltage = value*3.3/1024; //Voltage = value*3.3/2^10
 		 }
 	  
 	  RedLED_SetVal(); //Apaga led rojo
