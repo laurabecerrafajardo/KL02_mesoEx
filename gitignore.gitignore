@@ -53,14 +53,18 @@ dkms.conf
 
 #My gitignore lines
 /FLASH
+FLASH/
 /MQXLite
+MQXLite/
 /Project_Settings/Linker_Files
 /*.g_c
 /*.g_x
 /*.cwGeneratedFileSetLog
 /Generated_Code
+Generated_Code/
 /Documentation
 /Static_Code
 /Debug
 /ProjectInfo.xml
 /.metadata
+.metadata/
