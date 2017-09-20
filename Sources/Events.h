@@ -99,6 +99,26 @@ void AD1_OnCalibrationEnd(void);
 ** ===================================================================
 */
 
+/*
+** ===================================================================
+**     Event       :  Cpu_OnReset (module Events)
+**
+**     Component   :  Cpu [MKL02Z32FM4]
+*/
+/*!
+**     @brief
+**         This software event is called after a reset.
+**     @param
+**         Reason          - Content of the reset status register.
+**                           You can use predefined constants RSTSRC_*
+**                           defined in generated PE_Const.h file to
+**                           determine a reason of the last reset. See
+**                           definition of these constants in this file
+**                           for details.
+*/
+/* ===================================================================*/
+void Cpu_OnReset(uint16_t Reason);
+
 /* END Events */
 
 #ifdef __cplusplus
