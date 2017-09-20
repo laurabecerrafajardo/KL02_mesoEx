@@ -14,7 +14,7 @@
 **
 ** ###################################################################*/
 
-
+//Master branch: mejorar ADC
 /* Including needed modules to compile this module/procedure */
 #include "Cpu.h"
 #include "Events.h"
@@ -62,7 +62,7 @@ int main(void)
   RedLED_ClrVal(); //Enciende solo LED rojo
   
   if (!ERROR_global){ //si no hay error global
-	  int a;	  
+	  /*int a;	  
 	  for( a = 0; a < 200; a = a + 1 ){
 		  //HACE ADQUISICIÓN 10 VECES
 		  AD_finished = FALSE; // reset flag 
@@ -71,16 +71,17 @@ int main(void)
 			  // do something else here... 
 		  }
 		  // AD_finished set to TRUE by the interrupt to indicate the result is ready 
-		  (void)AD1_GetValue16(&value); //* get the result into value variable */
+		  (void)AD1_GetValue16(&value); //* get the result into value variable 
 		  Isource1_NegVal(); //Para revisar la velocidad de conversión del ADC!
-		  //voltage = value*3.3/1024; //Voltage = value*3.3/2^10
+		  voltage = value*3.3/1024; //Voltage = value*3.3/2^10
 		 }
 	  
 	  RedLED_SetVal(); //Apaga led rojo
 	  GreenLED_ClrVal(); //Enciende led verde
+	  */
 	  
 	 
-	  /*for(;;) { //Endless loop
+	  for(;;) { //Endless loop
 		  AD_finished = FALSE; // reset flag 
 		  (void)AD1_Measure(FALSE); // AD_finished will be set to TRUE once 
 		  while(!AD_finished) {
@@ -89,7 +90,7 @@ int main(void)
 		  // AD_finished set to TRUE by the interrupt to indicate the result is ready 
 		  (void)AD1_GetValue16(&value); // get the result into value variable 
 		  voltage = value*3.3/1024; //Voltage = value*3.3/2^10
-	  }*/
+	  }
   }// end if error global
 
   
