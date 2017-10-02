@@ -78,11 +78,15 @@ int main(void)
 	  
 	  RedLED_SetVal(); //Apaga led rojo
 	  GreenLED_ClrVal(); //Enciende led verde
-	  //Para medir la velocidad de los puertos
-	  Isource2_NegVal();
-	  Isource2_NegVal();
-	  Isource2_NegVal();
-	  Isource2_NegVal();
+	  GreenLED_SetVal();
+	  for(;;) { //Endless loop
+		  BlueLED_ClrVal();//enciende azul
+		  //Para medir la velocidad de los puertos
+		  Isource2_NegVal();
+		  Isource2_NegVal();
+		  Isource2_NegVal();
+		  Isource2_NegVal();
+	  }
 	  
 	 
 	  /*for(;;) { //Endless loop
